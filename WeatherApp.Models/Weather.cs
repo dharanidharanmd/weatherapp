@@ -17,7 +17,7 @@ namespace WeatherApp.Models
 
     public class Main 
     {
-        public double temperature { get; set; }
+        public double temp { get; set; }
         public double feels_like { get; set; }
         public double pressure { get; set; }
         public int humidity { get; set; }

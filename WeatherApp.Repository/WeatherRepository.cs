@@ -24,6 +24,7 @@ namespace WeatherApp.Repository
             try
             {
                 var openWeather = JsonConvert.DeserializeObject<Weather>(content);
+                openWeather.main.temp = (openWeather.main.temp - 32) * 0.55;
                 return openWeather;
             }
             catch (Exception ex) 
